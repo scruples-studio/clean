@@ -1,0 +1,38 @@
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="en"
+      xml:base="{{ config:app:url }}">
+    <id>{{ current_url }}</id>
+    <title>Dave Smyth</title>
+    <updated>{{ collection from="writing" limit="1" }}{{ date format="c" }}{{ /collection }}</updated>
+    <link href="." xml:base="/{{ segment_1 }}" />
+    <link rel="self" href="/{{ segment_1 }}" />
+
+    <!-- PubSubHubbub Discovery -->
+    <link rel="hub"  href="//superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
+    <link rel="hub"  href="//pubsubhubbub.appspot.com/" xmlns="http://www.w3.org/2005/Atom" />
+    <link rel="self" href="{{ config:app:url }}{{ segment_1 }}" xmlns="http://www.w3.org/2005/Atom" />
+    <!-- End Of PubSubHubbub Discovery -->
+
+    {{ collection from="writing" sort="date:desc" }}
+        <entry>
+            <id>{{ permalink }}</id>
+            <title>{{ title | cdata }}</title>
+            <link href="{{ permalink }}" />
+            <author><name>{{ seo:seo_site_title }}</name></author>
+            <updated>{{ date format="c" }}</updated>
+            <summary type="html"><![CDATA[ 
+                {{ content_section }}
+                    {{ if type == "text" }}
+                        {{ text | full_urls }}
+                    {{ elseif type == "buttons" }}
+                        {{ partial:content/buttons }}
+                    {{ elseif type == "image" }}
+                        {{ partial:feed/image }}
+                    {{ elseif type == "video" }}
+                        {{ partial:feed/video }}
+                    {{ endif }}
+                {{ /content_section }}
+            ]]></summary>
+        </entry>
+    {{ /collection }}
+</feed>

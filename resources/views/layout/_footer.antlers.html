@@ -1,0 +1,30 @@
+<footer role="contentinfo" class="wrapper">
+    {{ footer }}
+        {{ if primary_links }}
+        <div class="footerPrimary">
+            <ul class="footerList">
+                {{ primary_links }}
+                    {{ partial:layout/footer-list }}
+                {{ /primary_links }}
+            </ul>
+        </div>
+        {{ endif }}
+        {{ if secondary_links }}
+            <div class="footerSecondary">
+                <ul class="footerList">
+                    {{ secondary_links }}
+                        {{ partial:layout/footer-list }}
+                    {{ /secondary_links }}
+                </ul>
+            </div>
+        {{ endif }}
+    {{ /footer }}
+</footer>
+{{ scripts:footer_scripts }}
+    <!-- {{ description }} -->
+        {{ code }}
+    <!-- End {{ description }} -->
+{{ /scripts:footer_scripts }}
+<script src="/js/site.js"></script>
+</body>
+</html>

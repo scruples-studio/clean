@@ -1,0 +1,14 @@
+{{ partial:layout/header }}
+    <body class="{{ template }}Template">
+        <a href="#content" class="skipLink">Skip to content</a>
+        <header role="banner">
+            <div class="wrapper">
+                {{ partial:layout/menu }}
+            </div>
+        </header>
+        <main class="container" id="content" role="main">
+            <div class="wrapper">
+                {{ template_content }}
+            </div>
+        </main>
+{{ partial:layout/footer }}

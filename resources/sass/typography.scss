@@ -1,0 +1,66 @@
+html {
+    font-family: var(--sans);
+    text-rendering: optimizeSpeed;
+    font-kerning: normal;
+    color: var(--color-text);
+}
+body {
+    line-height: var(--line-height);
+}
+h1,
+h2 {
+    letter-spacing: var(--letter-spacing-xs);
+}
+h1,
+h2,
+h3 {
+    line-height: var(--line-height-s);
+    font-weight: var(--medium-weight);
+}
+h2 {
+    font-size: var(--font-size-xl);
+}
+h3 {
+    font-size: var(--font-size-l);
+}
+@media only screen and (min-width: 50em) {
+    h2 {
+        font-size: var(--font-size-2xl);
+    }
+}
+body,
+button, 
+input, 
+select, 
+textarea {
+    font-size: var(--font-size);
+}
+body, 
+a {
+    color: var(--color-text);
+}
+main a {
+    font-weight: var(--bold-weight);
+}
+strong,
+b {
+    font-weight: var(--bold-weight);
+}
+em,
+i {
+    font-style: italic;
+}
+code {
+    font-family: var(--mono);
+}
+p > code,
+pre {
+    background-color: var(--color-white);
+}
+pre {
+    width: var(--max-width-media);
+    margin-right: auto;
+    margin-left: auto;
+    font-size: var(--font-size-s);
+    padding: var(--space);
+}

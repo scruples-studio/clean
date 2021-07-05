@@ -1,0 +1,28 @@
+<header class="masthead">
+    {{ title | wrap:h1 }}
+    <p class="mastheadMeta">{{ date format="d.m.y" }}</p>
+</header>
+{{ partial:content/content-section }}
+<footer class="pagination">
+    {{ collection:previous in="writing" as="pagination" limit="1" sort="date:asc" }}
+        <div class="paginationPrev">
+            {{ pagination }}
+                {{ if !no_results }}
+                    <a href="{{ url }}">&larr; Older</a>
+                {{ endif }}
+            {{ /pagination }}
+        </div>
+    {{ /collection:previous }}
+    <div class="paginationBack">
+        <a href="/">{{ options:pagination_link_text }}</a>
+    </div>
+    {{ collection:next in="writing" as="pagination" limit="1" sort="date:asc" }}
+        <div class="paginationPrev">
+            {{ pagination }}
+                {{ if !no_results }}
+                    <a href="{{ url }}">Newer &rarr;</a>
+                {{ endif }}
+            {{ /pagination }}
+        </div>
+    {{ /collection:next }}
+</footer>

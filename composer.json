@@ -1,0 +1,9 @@
+{
+    "name": "scruplesstudio/clean",
+    "extra": {
+        "statamic": {
+            "name": "Clean",
+            "description": "Clean starter kit, made with Scruples."
+        }
+    }
+}

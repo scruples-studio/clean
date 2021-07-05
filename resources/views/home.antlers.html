@@ -1,0 +1,7 @@
+<ul class="articleList">
+    {{ collection:writing as="articles" }}
+        {{ articles }}
+            <li><a href="{{ slug }}">{{ title }}</a><span class="articleList-meta">{{ date format="d.m.y" }}</span></li>
+        {{ /articles }}
+    {{ /collection:writing }}
+</ul>

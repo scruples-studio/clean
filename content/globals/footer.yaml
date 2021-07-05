@@ -1,0 +1,16 @@
+title: Footer
+data:
+  primary_links:
+    -
+      link_text: Twitter
+      link_url: 'https://twitter.com/scruplesstudio'
+    -
+      link_text: Feed
+      link_url: /feed
+  secondary_links:
+    -
+      link_text: Privacy
+      link_url: /privacy
+    -
+      link_text: '&copy; 2021'
+      link_url: null

@@ -1,0 +1,48 @@
+:root {
+    --color-text: #191919;
+    --color-white: #fff;
+    --color-bg: #ecebe5;
+    --sans: "DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    --mono: "DM Mono",Courier,Inconsolata,monospace;
+    --line-height: 1.4;
+    --line-height-s: 1.15;
+    --line-height-xs: 1;
+    --normal-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 700;
+    --letter-spacing-s: -0.02em;
+    --letter-spacing-xs: -0.04em;
+    --border-thickness: 0.1rem;
+    --border-thickness-l: 0.15rem;
+    --border-radius: 0.2rem;
+    /* Modular scale: https://www.modularscale.com/?18&px&1.2 */
+    --font-size-3xl: calc(2.79rem + 0.2vw); /* 45px */
+    --font-size-2xl: calc(1.94rem + 0.2vw); /* 31px */
+    --font-size-xl: calc(1.62rem + 0.2vw); /* 26px */
+    --font-size-l: calc(1.35rem + 0.2vw); /* 22px */
+    --font-size: calc(1.125rem + 0.2vw);
+    --font-size-s: calc(0.9rem + 0.2vw);
+    --font-size-xs: calc(0.8rem + 0.2vw);
+    --width: 80rem;
+    --max-width: min(var(--width), calc(100vw - var(--space-4xl)));
+    --max-width-content: min(62rem, calc(100vw - var(--space-4xl)));
+    --max-width-media: calc(100% - 10vw);
+    --space-5xl: 5em;
+    --space-4xl: 3em;
+    --space-3xl: 2em;
+    --space-2xl: 1.5em;
+    --space-xl: 1.25em;
+    --space-l: 1.125em;
+    --space: 1em;
+    --space-s: 0.7em;
+    --space-xs: 0.5em;
+    --space-2xs: 0.3em;
+    --space-3xs: 0.2em;
+    --space-4xs: 0.1em;
+    --layout-space-3xl: calc(6rem + 10vw);
+    --layout-space-2xl: calc(6rem + 6vw);
+    --layout-space-xl: calc(6rem + 4vw);
+    --layout-space-l: calc(6rem + 3vw);
+    --layout-space-m: calc(6rem + 1vw);
+    --layout-space: calc(3rem + 2vw);
+}

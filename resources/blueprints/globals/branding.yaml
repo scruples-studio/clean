@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: logo
+        field:
+          mode: grid
+          container: assets
+          folder: brand
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          instructions: Optional.
+          listable: hidden

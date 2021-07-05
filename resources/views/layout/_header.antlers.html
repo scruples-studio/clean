@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>{{ partial:seo/title-full }}</title>
+
+        <meta name="description" content="{{ partial:seo/desc }}">
+        <link rel="shortcut icon" href="{{ options:site_favicon }}">
+    
+        <meta property="og:site_name" content="{{ seo:seo_site_title }}">
+        <meta property="og:title" content="{{ partial:seo/title-full }}">
+        <meta property="og:description" content="{{ partial:seo/desc }}">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="{{ site:short_locale }}">
+        <meta property="og:url" content="{{ config:app:url }}">
+        <meta property="og:image" content="{{ config:app:url }}{{ partial:seo/og-image }}">
+        <meta property="og:image:width" content="1000">
+        <meta property="og:image:height" content="700">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+        {{ scripts:head_scripts }}
+            <!-- {{ description }} -->
+                {{ code }}
+            <!-- End {{ description }} -->
+        {{ /scripts:head_scripts }}
+    </head>

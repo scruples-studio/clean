@@ -1,0 +1,11 @@
+<div class="video">
+    {{ if video | is_embeddable }}
+        <!-- Youtube and Video -->
+        <div class="videoWrapper">
+            <iframe src="{{ video | embed_url }}" frameborder='0' allowfullscreen></iframe>
+        </div>
+    {{ else }}
+        <!-- Other HTML5 video types -->
+        <video src="{{ video | embed_url }}"></video>
+    {{ /if }}
+</div>

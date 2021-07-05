@@ -1,0 +1,39 @@
+title: SEO
+fields:
+  -
+    handle: onpage_seo
+    field:
+      display: SEO
+      type: section
+      icon: section
+      listable: hidden
+  -
+    handle: seo_page_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Page Title'
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: seo_page_description
+    field:
+      antlers: false
+      display: 'Page Description'
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: seo_page_image
+    field:
+      mode: grid
+      container: assets
+      folder: seo
+      restrict: true
+      allow_uploads: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden

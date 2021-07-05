@@ -1,0 +1,68 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: primary_links
+        field:
+          fields:
+            -
+              handle: link_text
+              field:
+                input_type: text
+                antlers: false
+                display: Text
+                type: text
+                icon: text
+                width: 50
+                listable: hidden
+            -
+              handle: link_url
+              field:
+                input_type: text
+                antlers: false
+                display: Link
+                type: text
+                icon: text
+                instructions: Optional.
+                width: 50
+                listable: hidden
+          mode: table
+          add_row: 'Add item'
+          reorderable: true
+          display: 'Primary Links'
+          type: grid
+          icon: grid
+          listable: hidden
+      -
+        handle: secondary_links
+        field:
+          fields:
+            -
+              handle: link_text
+              field:
+                input_type: text
+                antlers: false
+                display: Text
+                type: text
+                icon: text
+                width: 50
+                listable: hidden
+            -
+              handle: link_url
+              field:
+                input_type: text
+                antlers: false
+                display: Link
+                type: text
+                icon: text
+                instructions: Optional.
+                width: 50
+                listable: hidden
+          mode: table
+          add_row: 'Add item'
+          reorderable: true
+          display: 'Secondary Links'
+          type: grid
+          icon: grid
+          listable: hidden

@@ -1,0 +1,33 @@
+title: Buttons
+fields:
+  -
+    handle: button
+    field:
+      fields:
+        -
+          handle: button_text
+          field:
+            input_type: text
+            antlers: false
+            display: Text
+            type: text
+            icon: text
+            width: 50
+            listable: hidden
+        -
+          handle: button_link
+          field:
+            input_type: text
+            antlers: false
+            display: Link
+            type: text
+            icon: text
+            width: 50
+            listable: hidden
+      mode: table
+      add_row: 'Add Button'
+      reorderable: true
+      display: Button
+      type: grid
+      icon: grid
+      listable: hidden

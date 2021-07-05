@@ -1,0 +1,50 @@
+title: Content
+fields:
+  -
+    handle: content_section
+    field:
+      always_show_set_button: false
+      sets:
+        buttons:
+          display: Buttons
+          fields:
+            -
+              import: buttons
+        image:
+          display: Image
+          fields:
+            -
+              import: image
+        video:
+          display: Video
+          fields:
+            -
+              import: video
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - code
+        - codeblock
+        - horizontalrule
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: true
+      link_noreferrer: false
+      target_blank: false
+      reading_time: true
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      display: Content
+      type: bard
+      icon: bard
+      listable: hidden

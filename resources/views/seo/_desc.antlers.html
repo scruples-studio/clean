@@ -1,0 +1,1 @@
+{{ if seo_page_description }}{{ seo_page_description }}{{ else }}{{ content_section }}{{ if text }}{{ text | strip_tags | safe_truncate:300 }}{{ endif }}{{ /content_section }}{{ endif }}

@@ -1,0 +1,42 @@
+/* Branding */
+.logo img {
+  height: 3rem;
+}
+/* General menu */
+[role="navigation"] {
+  padding-top: var(--space-2xl);
+  font-size: var(--font-size-s);
+}
+[role="navigation"] a {
+  text-decoration: none;
+  font-weight: var(--medium-weight);
+}
+.nav {
+  list-style-type: none;
+  margin: var(--space-xl) 0 0 0;
+  padding: unset;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav > li {
+  margin-top: var(--space-s);
+  margin-right: var(--space-3xl);
+}
+@media only screen and (min-width: 50em) {
+  [role="navigation"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    justify-content: flex-end;
+    margin: unset;
+  }
+  .nav > li {
+    margin-top: unset;
+    margin-right: unset;
+  }
+  .nav > li + li {
+    margin-left: var(--space-3xl);
+  }
+}

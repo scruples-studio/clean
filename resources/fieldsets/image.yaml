@@ -1,0 +1,15 @@
+title: Image
+fields:
+  -
+    handle: image_url
+    field:
+      mode: grid
+      container: assets
+      folder: content
+      restrict: true
+      allow_uploads: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden

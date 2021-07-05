@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dmsans-regular.woff') format('woff'), url('../fonts/dmsans-regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dmsans-italic.woff') format('woff'), url('../fonts/dmsans-italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dmsans-medium.woff') format('woff'), url('../fonts/dmsans-medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dmsans-bold.woff') format('woff'), url('../fonts/dmsans-bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Mono';
+    src: url('../fonts/dmmono-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}

@@ -1,0 +1,27 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: pagination_link_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Pagination Link Text'
+          type: text
+          icon: text
+          instructions: 'e.g. `Back to articles`'
+          listable: hidden
+      -
+        handle: site_favicon
+        field:
+          mode: grid
+          container: assets
+          folder: brand
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          display: Favicon
+          type: assets
+          icon: assets
+          listable: hidden

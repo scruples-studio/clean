@@ -1,0 +1,5 @@
+/* humans.txt */
+
+This Statamic starter kit was created by Scruples.
+
+Visit us at https://scruples.studio

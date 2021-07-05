@@ -1,0 +1,27 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: seo_site_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Site Title'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: seo_og_image
+        field:
+          mode: grid
+          container: assets
+          folder: seo
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          display: 'Open Graph Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions: 'Default image for social sharing.'

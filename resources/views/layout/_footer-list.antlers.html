@@ -1,0 +1,5 @@
+{{ if link_url }}
+    <li><a href="{{ link_url }}" rel="noopener">{{ link_text }}</a>{{ if !last }}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{{ endif }}</li>
+{{ else }}
+    <li>{{ link_text }}</li>
+{{ endif }}

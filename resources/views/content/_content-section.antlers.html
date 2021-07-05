@@ -1,0 +1,13 @@
+<article class="contentSection flow">
+    {{ content_section }}
+        {{ if type == "text" }}
+            {{ text }}
+        {{ elseif type == "buttons" }}
+            {{ partial:content/buttons }}
+        {{ elseif type == "image" }}
+            {{ partial:content/image }}
+        {{ elseif type == "video" }}
+            {{ partial:content/video }}
+        {{ endif }}
+    {{ /content_section }}
+</article>

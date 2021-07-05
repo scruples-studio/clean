@@ -1,0 +1,70 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: head_scripts
+        field:
+          fields:
+            -
+              handle: description
+              field:
+                input_type: text
+                display: Description
+                type: text
+                listable: hidden
+                width: 50
+            -
+              handle: code
+              field:
+                theme: material
+                mode: htmlmixed
+                indent_type: tabs
+                indent_size: 4
+                key_map: default
+                line_numbers: true
+                line_wrapping: true
+                display: Code
+                type: code
+                listable: hidden
+                width: 50
+          mode: table
+          add_row: 'Add Code'
+          reorderable: true
+          display: 'Head Scripts'
+          type: grid
+          instructions: 'Add meta tags and scripts to the `<head>` area of your site.'
+          listable: hidden
+      -
+        handle: footer_scripts
+        field:
+          fields:
+            -
+              handle: description
+              field:
+                input_type: text
+                display: Description
+                type: text
+                listable: hidden
+                width: 50
+            -
+              handle: code
+              field:
+                theme: material
+                mode: htmlmixed
+                indent_type: tabs
+                indent_size: 4
+                key_map: default
+                line_numbers: true
+                line_wrapping: true
+                display: Code
+                type: code
+                listable: hidden
+                width: 50
+          mode: table
+          add_row: 'Add Code'
+          reorderable: true
+          display: 'Footer Scripts'
+          type: grid
+          instructions: 'Add meta tags and scripts right before closing `</body>` area of your site.'
+          listable: hidden
