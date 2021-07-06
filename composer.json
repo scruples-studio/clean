@@ -1,5 +1,5 @@
 {
-    "name": "scruplesstudio/clean",
+    "name": "scruples-studio/clean",
     "extra": {
         "statamic": {
             "name": "Clean",
