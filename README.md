@@ -27,9 +27,11 @@ Clean is
 ## RSS
 
 ## Styling
-The recommended method for adding custom CSS is through the `/public/css/custom.css` file. Adding CSS here keeps it separate if future releases impact the core SCSS/CSS files.
+The recommended method for adding custom CSS is through the `/public/css/custom.css` file. It’s also possible to add some inline CSS in `Globals > Custom CSS`.
 
-CSS variables (listed in `/resources/sass/variables.scss`) allow you to make many site-wide changes, through the `custom.css` file, e.g.:
+Using one of these methods makes it easier to keep your starter kit up-to-date, especially if future releases affect the core SCSS/CSS files.
+
+The `:root` CSS variables, allow you to make many site-wide changes through your `custom.css` file. For instance, you can change the background colour with:
 
 ```
 :root {
@@ -37,6 +39,4 @@ CSS variables (listed in `/resources/sass/variables.scss`) allow you to make man
 }
 ```
 
-If you want to edit the core files, the kit includes an unminified `public/css/main.css` file. If you’re compiling the files, you can explore `/resources/sass`: just set `main.scss` to compile to `/public/css/main.css`. 
-
-> **NB:** Editing files in `/resources/sass` or `/public/css/main.css` directly may make it difficult to update Clean in future.
+If you want to edit the core files, the kit includes an unminified `public/css/main.css` file.
