@@ -103,3 +103,5 @@ The `:root` CSS variables, allow you to make many site-wide changes through your
 ```
 
 If you want to edit the core files, the kit includes an unminified `public/css/main.css` file.
+
+> Note, the site is built with standard CSS (roughly following [MaintainableCSS](https://maintainablecss.com/) principles), **not Tailwind**.
