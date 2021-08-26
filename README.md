@@ -29,6 +29,7 @@ The Starter Kit has two Collections: **Pages** and **Writing**. Both Collections
 * Buttons block
 
 All pages also feature an `SEO` section, where you can:
+
 * Set the SEO page title
 * Set the SEO page description
 * Upload an open graph image
@@ -64,16 +65,19 @@ Here you can add content to the two footer columns. The `Link` columns are optio
 
 ### Options
 Here you can:
+
 * Upload your site’s favicon
 * Change the pagination link text at the bottom of each article
 
 ### SEO
 This section allows you to set the default global:
+
 * `Site Title` which appears in the page tab, e.g. `Home | Site Title`
 * `Open Graph Image` – this can overwritten on individual pages by uploading a new SEO image
 
 ### Scripts
 This area lets you add scripts to two areas of your site:
+
 1. **Head**: within the `<head>` element
 2. **Footer**: Just before the closing `</body>` element
 
