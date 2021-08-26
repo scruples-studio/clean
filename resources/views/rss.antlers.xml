@@ -10,7 +10,7 @@
     <!-- PubSubHubbub Discovery -->
     <link rel="hub"  href="//superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="hub"  href="//pubsubhubbub.appspot.com/" xmlns="http://www.w3.org/2005/Atom" />
-    <link rel="self" href="{{ config:app:url }}{{ segment_1 }}" xmlns="http://www.w3.org/2005/Atom" />
+    <link rel="self" href="{{ config:app:url }}/{{ segment_1 }}" xmlns="http://www.w3.org/2005/Atom" />
     <!-- End Of PubSubHubbub Discovery -->
 
     {{ collection from="writing" sort="date:desc" }}
