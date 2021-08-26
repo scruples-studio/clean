@@ -2,7 +2,7 @@
       xml:lang="en"
       xml:base="{{ config:app:url }}">
     <id>{{ current_url }}</id>
-    <title>Dave Smyth</title>
+    <title>{{ config:app:name }}</title>
     <updated>{{ collection from="writing" limit="1" }}{{ date format="c" }}{{ /collection }}</updated>
     <link href="." xml:base="/{{ segment_1 }}" />
     <link rel="self" href="/{{ segment_1 }}" />
