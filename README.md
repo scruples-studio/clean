@@ -99,5 +99,3 @@ The `:root` CSS variables, allow you to make many site-wide changes through your
 ```
 
 If you want to edit the core files, the kit includes an unminified `public/css/main.css` file.
-
-## License
