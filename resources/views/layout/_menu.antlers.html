@@ -1,7 +1,7 @@
 <nav role="navigation" class="wrapper">
-    <a href="/" class="logo" title="home">
+    <a href="/" class="logo" title="{{ config:app:name }}.">
         {{ if branding:logo }}
-            <img src="{{ branding:logo }}" alt="{{ title }}." />
+            <img src="{{ branding:logo }}" alt="{{ config:app:name }}." />
         {{ else }}
             {{ site:name }}
         {{ endif }}

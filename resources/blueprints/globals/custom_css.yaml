@@ -1,0 +1,26 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: custom_css_heading
+        field:
+          display: '🎨 Custom CSS'
+          type: section
+          icon: section
+          instructions: 'The CSS you write here will appear inline in the `<head>` of each page. If you’re doing more extensive customisations, edit `/public/css/custom.css`.'
+          listable: hidden
+      -
+        handle: custom_css_code
+        field:
+          theme: material
+          mode: css
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: 'Enter your CSS'
+          type: code
+          icon: code
+          listable: hidden
