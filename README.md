@@ -16,8 +16,6 @@ If you have [Statamic’s CLI Tool installed](https://github.com/statamic/cli), 
     statamic new my-site scruples-studio/clean
 
 ## Configuring
-You can replicate everything in the [demo site](https://clean.scrupl.es) through the control panel. 
-
 If you make changes under-the-hood, be aware these may conflict with future updates to Clean. But if you’re doing that, you’re probably comfortable with keeping things up-to-date anyway 👍
 
 ### Content
